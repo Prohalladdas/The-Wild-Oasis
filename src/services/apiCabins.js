@@ -63,7 +63,7 @@ export async function createEditCabin(newCabin, id) {
 
 }
 
-export async function deleteCanin(id) {
+export async function deleteCabin(id) {
 
     const { data, error } = await supabase
         .from('cabins')
