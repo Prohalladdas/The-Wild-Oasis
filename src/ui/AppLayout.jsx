@@ -14,6 +14,24 @@ const Main = styled.main`
   background-color: var(--color-grey-50);
   padding: 4rem 4.8rem 6.4rem;
   overflow: scroll;
+  /* overflow: none; */
+
+  /* Scrollbar styles for WebKit browsers */
+  &::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: var(--color-grey-300);
+    border-radius: 5px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: var(--color-grey-100);
+  }
+
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-grey-300) var(--color-grey-100);
 `;
 
 const Container = styled.div`
